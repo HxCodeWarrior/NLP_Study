@@ -5,3 +5,5 @@ Lib/
 Library/
 Scripts/
 share/
+# 忽略pyvenv文件
+pyvenv.cfg

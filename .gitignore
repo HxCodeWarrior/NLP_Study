@@ -7,3 +7,5 @@ Scripts/
 share/
 # 忽略pyvenv文件
 pyvenv.cfg
+# 忽略jupyter配置文件
+etc/

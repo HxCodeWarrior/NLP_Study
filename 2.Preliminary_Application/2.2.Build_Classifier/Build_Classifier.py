@@ -5,6 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import torchvision.transforms as transforms
+import matplotlib.pyplot as plt
 
 # 1.下载数据集
 transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,0.5,0.5),(0.5,0.5,0.5))])
@@ -79,9 +80,9 @@ torch.save(net.state_dict(), PATH)
 dataiter = iter(testloader) # 构建一个迭代器
 images, labels = next(dataiter)
 # 打印原始图片
-imshow(torchvision.utils.make_grid(images))
+# imshow(torchvision.utils.make_grid(images))
 # 打印真实标签
-print("GroundTruth:", " ".join('%5s' % classes[labels[j]] for j in rnage(4)))
+print("GroundTruth:", " ".join('%5s' % classes[labels[j]] for j in range(4)))
 
 # 5.2.加载模型并对模型进行预测
 # 首先实例化模型的对象

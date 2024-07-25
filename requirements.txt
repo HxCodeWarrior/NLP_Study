@@ -2,6 +2,10 @@ numpy == 1.26.4
 matplotlib == 3.9.1
 jieba == 0.42.1
 hanlp == 2.1.0
+<<<<<<< HEAD
+scikit-learn == 1.5.1
+=======
+>>>>>>> c921e9e09bb56caf5cc0bfa94767f4c777e29cf8
 torch == 2.3.1
 torchvision == 0.18.1
 transformers == 4.43.1
